@@ -9,5 +9,5 @@ var assetTypeList = []assets.AssetType{
 	assettypes.News,
 	assettypes.Vote,
 	assettypes.Proposal,
-	assettypes.User,	
+	assettypes.User,
 }

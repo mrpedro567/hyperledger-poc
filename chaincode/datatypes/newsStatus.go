@@ -12,10 +12,9 @@ type NewsStatus float64
 
 const (
 	notVoted NewsStatus = iota
-	approved,
+	approved
 	rejected
 )
-
 
 func (b NewsStatus) CheckType() errors.ICCError {
 	switch b {
@@ -30,7 +29,7 @@ func (b NewsStatus) CheckType() errors.ICCError {
 	}
 }
 
-var NewsStatus = assets.DataType{
+var newsStatus = assets.DataType{
 	AcceptedFormats: []string{"number"},
 	DropDownValues: map[string]interface{}{
 		"notVoted": notVoted,

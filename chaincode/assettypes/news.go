@@ -1,6 +1,8 @@
 package assettypes
 
-import "github.com/hyperledger-labs/cc-tools/assets"
+import (
+	"github.com/hyperledger-labs/cc-tools/assets"
+)
 
 var News = assets.AssetType{
 	Tag:         "news",
@@ -31,11 +33,11 @@ var News = assets.AssetType{
 			DataType:    "string",
 		},
 		{
-			Tag:         "status",
-			Label:       "status",
-			Description: "status of news",
-			DataType:    "newsStatus",
-			DefaultValue: datatypes.notVoted
-		}
-	}
+			Tag:          "status",
+			Label:        "status",
+			Description:  "status of news",
+			DataType:     "newsStatus",
+			DefaultValue: 0,
+		},
+	},
 }

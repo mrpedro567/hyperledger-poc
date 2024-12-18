@@ -35,6 +35,6 @@ var User = assets.AssetType{
 			Label:       "External ID",
 			Description: "External ID of the user",
 			DataType:    "string",
-		}
-	}
+		},
+	},
 }

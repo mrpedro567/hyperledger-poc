@@ -18,7 +18,6 @@ var Vote = assets.AssetType{
 		},
 		{
 			Required:    true,
-			IsKey:       true,
 			Tag:         "proposal",
 			Label:       "Proposal",
 			Description: "Proposal to vote on",
@@ -26,7 +25,6 @@ var Vote = assets.AssetType{
 		},
 		{
 			Required:    true,
-			IsKey:       true,
 			Tag:         "user",
 			Label:       "User",
 			Description: "User that votes",
@@ -38,6 +36,6 @@ var Vote = assets.AssetType{
 			Label:       "Vote",
 			Description: "Vote on the proposal",
 			DataType:    "voteType",
-		}
-	}
+		},
+	},
 }
